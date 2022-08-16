@@ -6,6 +6,8 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
+  <link href="style.css" rel="stylesheet">
+
   <title>Frontend Mentor | NFT preview card component</title>
 </head>
 
@@ -14,8 +16,8 @@
   <main class="container">
 
     <div class="card-picture">
-      <img src="images/image-equilibrium.jpg" alt="Equilibrium">
-      <img src="images/icon-view.svg" alt="view-icon">
+      <img class="main-picture" src="images/image-equilibrium.jpg" alt="Equilibrium">
+      <img class="hover-picture" src="images/icon-view.svg" alt="view-icon">
     </div> 
 
     <div class="card-title">
@@ -27,21 +29,24 @@
     </div>
 
     <div class="card-icons">
-      <img src="images/icon-ethereum.svg" alt="ETH-icon">
-      <p class="currency">0.041 ETH</p>
-      <img src="images/icon-clock.svg" alt="clock-icon">
-      <p>3 days left</p>
+      <div class="currency-info">
+        <img src="images/icon-ethereum.svg" alt="ETH-icon">
+        <p class="currency">0.041 ETH</p>
+      </div>
+      <div class="time">
+        <img src="images/icon-clock.svg" alt="clock-icon">
+        <p>3 days left</p>
+      </div>
     </div>
 
     <div class="line">
-      <hr size="" width="" color="hsl(215, 32%, 27%)">
+      <hr size="" width="" color="">
     </div>
 
     <div class="card-author">
       <img class="avatar" src="images/image-avatar.png" alt="Avatar">
       <p>Creation of <div class="author">Jules Wyvern</div></p>
     </div>
-
 
   </main>
 
