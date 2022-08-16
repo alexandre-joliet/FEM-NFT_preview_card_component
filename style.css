@@ -66,6 +66,11 @@ body {
     font-size: 12px;
     padding-top: 10px;
     padding-bottom: 15px;
+    cursor: pointer;
+}
+
+.card-title:hover {
+    color: hsl(178, 100%, 50%);
 }
 
 .card-description {
@@ -85,7 +90,7 @@ body {
 .currency-info {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
     color: hsl(178, 100%, 50%);
     font-weight: 600;
     font-size: 18px;
@@ -94,7 +99,7 @@ body {
 .time {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
     color: hsl(215, 51%, 70%);
 }
 
@@ -120,4 +125,9 @@ body {
 
 .author {
     color: white;
+    cursor: pointer;
+}
+
+.author:hover {
+    color: hsl(178, 100%, 50%);
 }
