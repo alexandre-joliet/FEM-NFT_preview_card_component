@@ -6,6 +6,7 @@
     box-sizing: border-box;
     margin: 0;
     font-family: 'Outfit', Helvetica, Arial;
+    text-decoration: none;
 }
 
 /* --- */
@@ -29,48 +30,49 @@ body {
     box-shadow: 2px 2px 52px 6px rgba(0, 0, 0, 0.1);
 }
 
-.card-picture {
-    position: relative;
-    padding-bottom: 320px;
-}
-
-.card-picture img {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-/* TO FIND A SOLUTION ! */
+/* PICTURE */
 
 .main-picture {
+    position: relative;
+}
+
+.main-picture > img {
     max-width: 100%;
     max-height: 100%;
+    display: block;
     border-radius: 10px;
-    transition: ease-in-out 0.1s;
-    cursor: pointer; 
 }
 
-.hover-picture {
+.main-picture::after {
+    content:"";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: background-color 0.3s ease-out;
     border-radius: 10px;
-    padding: 126.01px;
-    background: hsla(0, 0%, 100%, 0.40);
-    display: none;
 }
 
-.main-picture:hover {
-    display: none;
+.main-picture:hover::after, .main-picture:active::after {
+    background: hsla(178, 100%, 50%, 0.6) url(/FEM-NFT_preview_card_component/images/icon-view.svg) center no-repeat;
 }
+
+
+/* TEXT  */
 
 .card-title {
-    color: white;
-    font-size: 12px;
-    padding-top: 10px;
-    padding-bottom: 15px;
-    cursor: pointer;
+    padding: 15px 0px 15px 0px;
 }
 
-.card-title:hover {
+.title {
+    color: white;
+    font-size: 24px;
+}
+
+.title:hover {
     color: hsl(178, 100%, 50%);
+    transition: ease-in-out 0.15s;
 }
 
 .card-description {
@@ -125,9 +127,9 @@ body {
 
 .author {
     color: white;
-    cursor: pointer;
 }
 
 .author:hover {
     color: hsl(178, 100%, 50%);
+    transition: ease-in-out 0.15s;
 }
