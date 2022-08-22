@@ -105,10 +105,6 @@ body {
     color: hsl(215, 51%, 70%);
 }
 
-.line {
-    color: hsl(215, 32%, 27%);
-}
-
 .card-author {
     display: flex;
     align-items: center;
@@ -116,6 +112,7 @@ body {
     padding-top: 15px;
     color: hsl(215, 51%, 70%);
     gap: 3px;
+    border-top: 0.5px solid hsl(215, 32%, 27%);
 }
 
 .avatar {
