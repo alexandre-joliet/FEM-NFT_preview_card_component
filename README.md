@@ -22,8 +22,8 @@
 
 ### Links
 
-- Solution URL: https://github.com/JojoRider/FEM-NFT_preview_card_component
-- Live Site URL: https://jojorider.github.io/FEM-NFT_preview_card_component/
+- Solution URL: https://github.com/alexandre-joliet/FEM-NFT_preview_card_component
+- Live Site URL: https://alexandre-joliet.github.io/FEM-NFT_preview_card_component/
 
 
 ---
